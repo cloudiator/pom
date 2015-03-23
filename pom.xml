@@ -39,9 +39,15 @@
 
     </properties>
 
+    <parent>
+        <groupId>de.uniulm.omi</groupId>
+        <artifactId>omi-dev-pom</artifactId>
+        <version>0.1-RELEASE</version>
+    </parent>
+    <!--suppress MavenRedundantGroupId -->
     <groupId>de.uniulm.omi.cloudiator</groupId>
     <artifactId>cloudiator-pom</artifactId>
-    <version>0.1-SNAPSHOT</version>
+    <version>0.1-RELEASE</version>
     <packaging>pom</packaging>
 
     <name>cloudiator-pom</name>
