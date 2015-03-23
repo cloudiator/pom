@@ -55,21 +55,6 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>de.uniulm.omi.cloudiator</groupId>
-                <artifactId>sword-drivers</artifactId>
-                <version>${my.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>de.uniulm.omi.cloudiator</groupId>
-                <artifactId>sword-api</artifactId>
-                <version>${my.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>de.uniulm.omi.cloudiator</groupId>
-                <artifactId>sword-core</artifactId>
-                <version>${my.version}</version>
-            </dependency>
-            <dependency>
                 <groupId>com.google.inject</groupId>
                 <artifactId>guice</artifactId>
                 <version>${guice.version}</version>
