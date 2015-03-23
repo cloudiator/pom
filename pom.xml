@@ -36,6 +36,7 @@
         <!-- Versions for common plugins -->
         <source-plugin.version>2.4</source-plugin.version>
         <maven-compiler.version>3.2</maven-compiler.version>
+        <javadoc-plugin.version>2.10.1</javadoc-plugin.version>
 
     </properties>
 
@@ -47,7 +48,7 @@
     <!--suppress MavenRedundantGroupId -->
     <groupId>de.uniulm.omi.cloudiator</groupId>
     <artifactId>cloudiator-pom</artifactId>
-    <version>0.1-RELEASE</version>
+    <version>0.1.1-RELEASE</version>
     <packaging>pom</packaging>
 
     <name>cloudiator-pom</name>
@@ -120,6 +121,22 @@
                         <source>1.8</source>
                         <target>1.8</target>
                     </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-javadoc-plugin</artifactId>
+                    <version>${javadoc-plugin.version}</version>
+                    <executions>
+                        <execution>
+                            <id>attach-javadocs</id>
+                            <goals>
+                                <goal>jar</goal>
+                            </goals>
+                            <configuration>
+                                <additionalparam>-Xdoclint:none</additionalparam>
+                            </configuration>
+                        </execution>
+                    </executions>
                 </plugin>
             </plugins>
         </pluginManagement>
