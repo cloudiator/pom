@@ -42,7 +42,7 @@
     <parent>
         <groupId>de.uniulm.omi</groupId>
         <artifactId>omi-dev-pom</artifactId>
-        <version>0.1-RELEASE</version>
+        <version>0.1.1-RELEASE</version>
     </parent>
     <!--suppress MavenRedundantGroupId -->
     <groupId>de.uniulm.omi.cloudiator</groupId>
