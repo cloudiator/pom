@@ -49,7 +49,7 @@
     <!--suppress MavenRedundantGroupId -->
     <groupId>de.uniulm.omi.cloudiator</groupId>
     <artifactId>cloudiator-pom</artifactId>
-    <version>0.1.4-RELEASE</version>
+    <version>0.1.5-RELEASE</version>
     <packaging>pom</packaging>
 
     <name>cloudiator-pom</name>
@@ -110,7 +110,7 @@
             </dependency>
             <dependency>
                 <groupId>org.glassfish.jersey.media</groupId>
-                <artifactId>jersey-media-jackson</artifactId>
+                <artifactId>jersey-media-json-jackson</artifactId>
                 <version>${jersey.version}</version>
             </dependency>
         </dependencies>
