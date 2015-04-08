@@ -49,7 +49,7 @@
     <!--suppress MavenRedundantGroupId -->
     <groupId>de.uniulm.omi.cloudiator</groupId>
     <artifactId>cloudiator-pom</artifactId>
-    <version>0.1.6-RELEASE</version>
+    <version>0.1.7-RELEASE</version>
     <packaging>pom</packaging>
 
     <name>cloudiator-pom</name>
@@ -154,6 +154,16 @@
                     <version>${javadoc-plugin.version}</version>
                     <executions>
                         <execution>
+                            <id>aggregate</id>
+                            <goals>
+                                <goal>aggregate</goal>
+                            </goals>
+                            <phase>package</phase>
+                            <configuration>
+                                <additionalparam>-Xdoclint:none</additionalparam>
+                            </configuration>
+                        </execution>
+                        <execution>
                             <id>attach-javadocs</id>
                             <goals>
                                 <goal>jar</goal>
@@ -162,6 +172,7 @@
                                 <additionalparam>-Xdoclint:none</additionalparam>
                             </configuration>
                         </execution>
+
                     </executions>
                 </plugin>
             </plugins>
