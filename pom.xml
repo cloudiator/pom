@@ -39,6 +39,7 @@
         <maven-compiler.version>3.2</maven-compiler.version>
         <javadoc-plugin.version>2.10.1</javadoc-plugin.version>
         <mockito.version>1.10.19</mockito.version>
+	<apache.codec.version>1.10</apache.codec.version>
     </properties>
 
     <parent>
@@ -49,7 +50,7 @@
     <!--suppress MavenRedundantGroupId -->
     <groupId>de.uniulm.omi.cloudiator</groupId>
     <artifactId>cloudiator-pom</artifactId>
-    <version>0.2.1-RELEASE</version>
+    <version>0.2.2-RELEASE</version>
     <packaging>pom</packaging>
 
     <name>cloudiator-pom</name>
@@ -128,6 +129,11 @@
                 <groupId>org.glassfish.jersey.core</groupId>
                 <artifactId>jersey-client</artifactId>
                 <version>${jersey.version}</version>
+            </dependency>
+	    <dependency>
+		<groupId>commons-codec</groupId>
+                <artifactId>commons-codec</artifactId>
+	        <version>${apache.codec.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
