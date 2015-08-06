@@ -55,7 +55,7 @@
     <!--suppress MavenRedundantGroupId -->
     <groupId>de.uniulm.omi.cloudiator</groupId>
     <artifactId>cloudiator-pom</artifactId>
-    <version>0.2.2-RELEASE</version>
+    <version>0.2.3-RELEASE</version>
     <packaging>pom</packaging>
 
     <name>cloudiator-pom</name>
