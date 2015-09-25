@@ -43,8 +43,6 @@
         <source-plugin.version>2.4</source-plugin.version>
         <maven-compiler.version>3.2</maven-compiler.version>
         <javadoc-plugin.version>2.10.1</javadoc-plugin.version>
-
-
     </properties>
 
     <parent>
@@ -55,10 +53,36 @@
     <!--suppress MavenRedundantGroupId -->
     <groupId>de.uniulm.omi.cloudiator</groupId>
     <artifactId>cloudiator-pom</artifactId>
-    <version>0.2.3-RELEASE</version>
+    <version>0.3.0-RELEASE</version>
     <packaging>pom</packaging>
 
     <name>cloudiator-pom</name>
+    <description>The organizational pom for the cloudiator software project.</description>
+    <url>https://github.com/cloudiator</url>
+
+    <licenses>
+        <license>
+            <name>The Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Daniel Baur</name>
+            <email>daniel.baur@uni-ulm.de</email>
+            <organization>University of Ulm</organization>
+            <organizationUrl>
+                https://www.uni-ulm.de/en/in/institute-of-information-resource-management.html
+            </organizationUrl>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git@github.com:cloudiator/pom.git</connection>
+        <developerConnection>scm:git@github.com:cloudiator/pom.git</developerConnection>
+        <url>git@github.com:cloudiator/pom.git</url>
+    </scm>
 
     <dependencyManagement>
         <dependencies>
@@ -160,7 +184,7 @@
                         <execution>
                             <id>attach-sources</id>
                             <goals>
-                                <goal>jar</goal>
+                                <goal>jar-no-fork</goal>
                             </goals>
                         </execution>
                     </executions>
@@ -199,7 +223,6 @@
                                 <additionalparam>-Xdoclint:none</additionalparam>
                             </configuration>
                         </execution>
-
                     </executions>
                 </plugin>
             </plugins>
