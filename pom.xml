@@ -52,12 +52,13 @@
     </parent>
     <!--suppress MavenRedundantGroupId -->
     <groupId>io.github.cloudiator</groupId>
-    <artifactId>cloudiator-pom</artifactId>
+    <artifactId>project</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>cloudiator-pom</name>
-    <description>The organizational pom for the cloudiator software project. Defines dependency
+    <description>The organizational (project) pom for the cloudiator software project. Defines
+        dependency
         management for common dependencies.
     </description>
     <url>https://github.com/cloudiator</url>
