@@ -114,7 +114,7 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>de.uniulm.omi.cloudiator</groupId>
+                <groupId>io.github.cloudiator</groupId>
                 <artifactId>common</artifactId>
                 <version>${cloudiator.common.version}</version>
             </dependency>
