@@ -121,8 +121,8 @@
     </developers>
 
     <scm>
-        <connection>scm:git@github.com:cloudiator/pom.git</connection>
-        <developerConnection>scm:git@github.com:cloudiator/pom.git</developerConnection>
+        <connection>scm:git:https://github.com/cloudiator/pom.git</connection>
+        <developerConnection>scm:git:git@github.com:cloudiator/pom.git</developerConnection>
         <url>https://github.com/cloudiator/pom/</url>
     </scm>
 
