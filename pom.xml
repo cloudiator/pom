@@ -123,7 +123,7 @@
     <scm>
         <connection>scm:git@github.com:cloudiator/pom.git</connection>
         <developerConnection>scm:git@github.com:cloudiator/pom.git</developerConnection>
-        <url>git@github.com:cloudiator/pom.git</url>
+        <url>https://github.com/cloudiator/pom/</url>
     </scm>
 
     <dependencyManagement>
