@@ -56,6 +56,7 @@
         <jersey.version>2.17</jersey.version>
         <apache.codec.version>1.10</apache.codec.version>
         <mockito.version>1.10.19</mockito.version>
+        <jackson-version>2.4.2</jackson-version>
 
         <!-- Versions for common plugins -->
         <source-plugin.version>2.4</source-plugin.version>
@@ -205,6 +206,11 @@
                 <version>${jersey.version}</version>
             </dependency>
             <dependency>
+                <groupId>org.glassfish.jersey.media</groupId>
+                <artifactId>jersey-media-multipart</artifactId>
+                <version>${jersey-version}</version>
+            </dependency>
+            <dependency>
                 <groupId>org.glassfish.jersey.ext</groupId>
                 <artifactId>jersey-bean-validation</artifactId>
                 <version>${jersey.version}</version>
@@ -213,6 +219,26 @@
                 <groupId>commons-codec</groupId>
                 <artifactId>commons-codec</artifactId>
                 <version>${apache.codec.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-core</artifactId>
+                <version>${jackson-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-annotations</artifactId>
+                <version>${jackson-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>${jackson-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.datatype</groupId>
+                <artifactId>jackson-datatype-joda</artifactId>
+                <version>${jackson-version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
