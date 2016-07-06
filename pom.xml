@@ -67,6 +67,7 @@
         <surefire-plugin.version>2.19.1</surefire-plugin.version>
         <jacoco-plugin.version>0.7.7.201606060606</jacoco-plugin.version>
         <antrun-plugin.version>1.8</antrun-plugin.version>
+        <jaxws-plugin.version>1.12</jaxws-plugin.version>
     </properties>
 
     <groupId>io.github.cloudiator</groupId>
@@ -275,6 +276,11 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-antrun-plugin</artifactId>
                     <version>${antrun-plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>jaxws-maven-plugin</artifactId>
+                    <version>${jaxws-plugin.version}</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
