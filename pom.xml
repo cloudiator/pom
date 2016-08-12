@@ -65,7 +65,7 @@
         <release-plugin.version>2.5.3</release-plugin.version>
         <assembly-plugin.version>2.6</assembly-plugin.version>
         <surefire-plugin.version>2.19.1</surefire-plugin.version>
-        <jacoco-plugin.version>0.7.7.201606060606</jacoco-plugin.version>
+        <jacoco-plugin.version>0.7.2.201409121644</jacoco-plugin.version>
         <antrun-plugin.version>1.8</antrun-plugin.version>
         <jaxws-plugin.version>1.12</jaxws-plugin.version>
     </properties>
