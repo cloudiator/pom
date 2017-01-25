@@ -68,6 +68,7 @@
         <jacoco-plugin.version>0.7.2.201409121644</jacoco-plugin.version>
         <antrun-plugin.version>1.8</antrun-plugin.version>
         <jaxws-plugin.version>1.12</jaxws-plugin.version>
+        <slf4j-api.version>1.7.21</slf4j-api.version>
     </properties>
 
     <groupId>io.github.cloudiator</groupId>
@@ -156,7 +157,7 @@
             <dependency>
                 <groupId>com.google.inject.extensions</groupId>
                 <artifactId>guice-assistedinject</artifactId>
-                <version>4.1.0</version>
+                <version>${guice.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.google.code.findbugs</groupId>
@@ -195,6 +196,11 @@
                 <groupId>org.apache.logging.log4j</groupId>
                 <artifactId>log4j-core</artifactId>
                 <version>${log4j2.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${slf4j-api.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.glassfish.jersey.containers</groupId>
