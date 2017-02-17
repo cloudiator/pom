@@ -136,8 +136,23 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>io.github.cloudiator</groupId>
-                <artifactId>common</artifactId>
+                <groupId>io.github.cloudiator.common</groupId>
+                <artifactId>all</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.cloudiator.common</groupId>
+                <artifactId>domain</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.cloudiator.common</groupId>
+                <artifactId>persistence</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.cloudiator.common</groupId>
+                <artifactId>util</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
