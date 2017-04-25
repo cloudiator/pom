@@ -70,6 +70,7 @@
         <logback.version>1.1.7</logback.version>
         <protobuf.version>3.2.0</protobuf.version>
         <kafka.version>0.10.1.0</kafka.version>
+        <guava-retry.version>2.0.0</guava-retry.version>
     </properties>
 
     <groupId>io.github.cloudiator</groupId>
@@ -207,6 +208,11 @@
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
                 <version>${guava.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.rholder</groupId>
+                <artifactId>guava-retrying</artifactId>
+                <version>${guava-retry.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.logging.log4j</groupId>
