@@ -68,6 +68,8 @@
         <jaxws-plugin.version>1.12</jaxws-plugin.version>
         <slf4j.version>1.7.21</slf4j.version>
         <logback.version>1.1.7</logback.version>
+        <protobuf.version>3.2.0</protobuf.version>
+        <kafka.version>0.10.1.0</kafka.version>
     </properties>
 
     <groupId>io.github.cloudiator</groupId>
@@ -135,22 +137,27 @@
         <dependencies>
             <dependency>
                 <groupId>io.github.cloudiator.common</groupId>
-                <artifactId>all</artifactId>
+                <artifactId>common-all</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.github.cloudiator.common</groupId>
-                <artifactId>domain</artifactId>
+                <artifactId>common-domain</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.github.cloudiator.common</groupId>
-                <artifactId>persistence</artifactId>
+                <artifactId>common-persistence</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.github.cloudiator.common</groupId>
-                <artifactId>util</artifactId>
+                <artifactId>common-util</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.cloudiator.common</groupId>
+                <artifactId>common-messaging</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
@@ -296,6 +303,16 @@
                 <artifactId>logback-classic</artifactId>
                 <version>${logback.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.google.protobuf</groupId>
+                <artifactId>protobuf-java</artifactId>
+                <version>${protobuf.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.kafka</groupId>
+                <artifactId>kafka-clients</artifactId>
+                <version>${kafka.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -388,6 +405,19 @@
                         <nexusUrl>https://oss.sonatype.org/</nexusUrl>
                         <autoReleaseAfterClose>false</autoReleaseAfterClose>
                     </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.xolstice.maven.plugins</groupId>
+                    <artifactId>protobuf-maven-plugin</artifactId>
+                    <version>0.5.0</version>
+                    <executions>
+                        <execution>
+                            <goals>
+                                <goal>compile</goal>
+                                <goal>test-compile</goal>
+                            </goals>
+                        </execution>
+                    </executions>
                 </plugin>
             </plugins>
         </pluginManagement>
