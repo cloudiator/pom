@@ -16,7 +16,9 @@
   ~ under the License.
   -->
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <repositories>
@@ -55,6 +57,11 @@
         <apache.codec.version>1.10</apache.codec.version>
         <mockito.version>1.10.19</mockito.version>
         <jackson-version>2.8.6</jackson-version>
+        <slf4j.version>1.7.21</slf4j.version>
+        <logback.version>1.1.7</logback.version>
+        <protobuf.version>3.2.0</protobuf.version>
+        <kafka.version>0.10.1.0</kafka.version>
+        <guava-retry.version>2.0.0</guava-retry.version>
 
         <!-- Versions for common plugins -->
         <source-plugin.version>3.0.1</source-plugin.version>
@@ -66,11 +73,8 @@
         <jacoco-plugin.version>0.7.2.201409121644</jacoco-plugin.version>
         <antrun-plugin.version>1.8</antrun-plugin.version>
         <jaxws-plugin.version>1.12</jaxws-plugin.version>
-        <slf4j.version>1.7.21</slf4j.version>
-        <logback.version>1.1.7</logback.version>
-        <protobuf.version>3.2.0</protobuf.version>
-        <kafka.version>0.10.1.0</kafka.version>
-        <guava-retry.version>2.0.0</guava-retry.version>
+        <checkstyle-plugin.version>2.17</checkstyle-plugin.version>
+
     </properties>
 
     <groupId>io.github.cloudiator</groupId>
@@ -425,6 +429,26 @@
                         </execution>
                     </executions>
                 </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-checkstyle-plugin</artifactId>
+                    <version>${checkstyle-plugin.version}</version>
+                    <executions>
+                        <execution>
+                            <id>validate</id>
+                            <phase>validate</phase>
+                            <configuration>
+                                <configLocation>google_checks.xml</configLocation>
+                                <encoding>UTF-8</encoding>
+                                <consoleOutput>true</consoleOutput>
+                                <failsOnError>true</failsOnError>
+                            </configuration>
+                            <goals>
+                                <goal>check</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
             </plugins>
         </pluginManagement>
 
@@ -449,8 +473,11 @@
                 <groupId>org.sonatype.plugins</groupId>
                 <artifactId>nexus-staging-maven-plugin</artifactId>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+            </plugin>
         </plugins>
-
     </build>
 
     <profiles>
