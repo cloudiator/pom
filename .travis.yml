@@ -4,9 +4,9 @@ jdk:
   - oraclejdk8
   - openjdk7
 
-install: mvn install -U -DskipTests=true
+install: mvn -q install -U -DskipTests=true
 
-script: mvn install -U -Dmaven.javadoc.skip=true
+script: mvn -q install -U -Dmaven.javadoc.skip=true
 
 env:
   global:
