@@ -50,7 +50,7 @@
     <!-- Versions for common plugins -->
     <source-plugin.version>3.0.1</source-plugin.version>
     <maven-compiler.version>3.5.1</maven-compiler.version>
-    <javadoc-plugin.version>2.10.4</javadoc-plugin.version>
+    <javadoc-plugin.version>3.2.0</javadoc-plugin.version>
     <release-plugin.version>2.5.3</release-plugin.version>
     <assembly-plugin.version>3.1.0</assembly-plugin.version>
     <surefire-plugin.version>2.22.1</surefire-plugin.version>
